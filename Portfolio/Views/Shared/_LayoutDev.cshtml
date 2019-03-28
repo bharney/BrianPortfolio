@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Portfolio</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Dancing+Script:700" />
+    <link rel="stylesheet" href="~/css/site.min.css">
+</head>
+<body ng-app="brianPortfolioApp">
+    <div ng-controller="MainCtrl as $ctrl">
+        <header id="Home">
+            <div class="parallax-container hidden-xs visible-sm-block visible-md-block visible-lg-block">
+                <div class="parallax-layer layer-0" data-parallax-speed="0.05"></div>
+                <div class="parallax-layer layer-1" data-parallax-speed="0.05"></div>
+                <div class="parallax-layer layer-2" data-parallax-speed="0.05"></div>
+                <div class="parallax-layer layer-3" data-parallax-speed="0.07"></div>
+                <div class="parallax-layer layer-4" data-parallax-speed="0.1"></div>
+                <div class="parallax-layer layer-5" data-parallax-speed="0.2"></div>
+                <div class="parallax-layer layer-6" data-parallax-speed="0.3"></div>
+                <div class="parallax-layer layer-7" data-parallax-speed="0.4"></div>
+                <div class="parallax-layer layer-8" data-parallax-speed="0.5"></div>
+                <div class="parallax-layer layer-9" data-parallax-speed="0.6"></div>
+                <div class="parallax-layer cover" data-parallax-speed="0.6"></div>
+            </div>
+            <div id="navBar" class="header-content clearfix section">
+                <nav id="header-nav" class="center">
+                    <p class="text-left navline">
+                        <a class="page-scroll" href="#Home">Home</a>
+                    </p>
+                    <p class="text-left navline">
+                        <a class="page-scroll" href="#Portfolio">Work</a>
+                    </p>
+                    <p class="text-left navline">
+                        <a class="page-scroll" href="#Technologies">Tech</a>
+                    </p>
+                    <p class="logo">
+                        <a href="#Home"><img src="../images/logoG.png" alt="Built by Brian Harney - Black Bear Design" /></a>
+                    </p>
+                    <p class="text-right navline">
+                        <a class="page-scroll" href="https://twitter.com/bharney0">Feed</a>
+                    </p>
+                    <p class="text-right navline">
+                        <a class="page-scroll" href="#About">About</a>
+                    </p>
+                    <p class="text-right navline">
+                        <a href="#" title="Contact Brian Harney. Feel free to get in touch for any projects, contract work, and or just a friendly hello!" ng-click="$ctrl.open();">Contact</a>
+                    </p>
+                </nav>
+                <div id="heroText" class="inner backdrop">
+                    <h1 class="cursive wow fadeInLeftBig">Brian Harney</h1>
+                    <h2><strong>Full Stack Software Engineer</strong></h2>
+                    <hr>
+                </div>
+            </div>
+        </header>
+        <div id="nav">
+            <div id="custom-nav" class="navbar navbar-default navbar-static-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand page-scroll" href="#Home"><span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span>  Brian Harney</a>
+                    </div>
+                    <div class="navbar-collapse collapse" id="js-navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a class="page-scroll" href="#Portfolio">Portfolio</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#Technologies">Technologies</a>
+                            </li>
+                            <li>
+                                <a target="_blank" class="page-scroll" href="https://twitter.com/bharney0">Feed</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#About">About</a>
+                            </li>
+                            <li>
+                                <a title="Contact Brian Harney" style="cursor:pointer" ng-click="$ctrl.open()">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @RenderBody()
+    </div>
+    <script type="text/ng-template" id="contactModal.html">
+        <div class="modal-header">
+            <h2 class="modal-title text-center" id="modal-title">Contact me<i ng-click="$ctrl.cancel()" class="glyphicon glyphicon-remove fa-1x pull-right"></i></h2>
+        </div>
+        <div class="modal-body" id="modal-body">
+            <div class="circle-img img-circle center-block">
+                <img src="/images/CircleHead.png" class="img-circle" alt="Brian Harney" />
+            </div>
+            <section class="no-padding" id="contact">
+                <div class="text-center">
+                    <h4>
+                        Contact me with any questions, opportunities or contract work.<br />
+                        115 Moss Ave,<br />
+                        Oakland, CA 94611<br />
+                        (630) 849-6948<br />
+                        <a href="mailto:bharney0@gmail.com" target="_top">bharney0@gmail.com</a>
+                    </h4>
+                </div>
+                <form action="/" method="post">
+                    <formid role="form" class="form-group">
+                        <input required type="text" ng-model="email.Name" name="Name" class="form-control form-group" placeholder="Name">
+                        <input type="email" ng-model="email.EmailAddress" name="EmailAddress" class="form-control form-group" placeholder="Email">
+                        <input type="text" ng-model="email.Phone" name="Phone" class="form-control form-group" placeholder="Phone">
+                        <textarea style="width:100%;" ng-model="email.Message" name="Message" spellcheck="true" class="form-control form-group" rows="4" placeholder="Your message here.."></textarea>
+                    </formid>
+                </form>
+            </section>
+        </div>
+        <div class="modal-footer">
+            <div class="col-xs-offset-2 col-xs-8">
+                <button class="btn btn-success btn-lg btn-block center-block" type="button" ng-click="$ctrl.ok()"><span>Send <i class="glyphicon glyphicon-send"></i></span></button>
+            </div>
+        </div>
+    </script>
+    <script src="~/js/site.min.js"></script>
+</body>
+</html>

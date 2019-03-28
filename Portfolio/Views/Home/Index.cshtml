@@ -1,0 +1,380 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="content">
+    <section id="Portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-offset-1 col-xs-10 hidden-xs hidden-sm">
+                    <div class="row">
+                        <div class="col-lg-4 col-xs-4">
+                            <a class="hovereffect" ng-mouseenter="project1=true;" ng-mouseleave="project1=false;" href="https://www.chicagoinabox.com/">
+                                <div class="hexagon project1">
+                                    <div class="hexTop"></div>
+                                    <div class="hexBottom"></div>
+                                </div>
+                                <div class="overlay">
+                                    <h2 class="projectText text-center" ng-show="project1"><strong>Chicago In A Box</strong></h2>
+                                    <p class="text-center">Learn more about this project</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-xs-4">
+                            <a ng-mouseenter="project2=true;" class="hovereffect" ng-mouseleave="project2=false;" href="http://bharney.com/">
+                                <div class="hexagon project2">
+                                    <div class="hexTop"></div>
+                                    <div class="hexBottom"></div>
+                                </div>
+                                <div class="overlay">
+                                    <h2 class="projectText text-center" ng-show="project2"><strong>Meet Brian</strong></h2>
+                                    <p class="text-center">Learn more about this project</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-xs-4">
+                            <a ng-mouseenter="project3=true;" class="hovereffect" ng-mouseleave="project3=false;" href="http://www.JMSAutoRepair.com/">
+                                <div class="hexagon project3">
+                                    <div class="hexTop"></div>
+                                    <div class="hexBottom"></div>
+                                </div>
+                                <div class="overlay">
+                                    <h2 class="projectText text-center" ng-show="project3"><strong>JMS Auto</strong></h2>
+                                    <p class="text-center">Learn more about this project</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-offset-2 col-xs-10 hidden-xs hidden-sm">
+                    <div class="row hexPosition">
+                        <div class="col-lg-4 col-xs-4">
+                            <a ng-mouseenter="project4=true;" class="hovereffect" ng-mouseleave="project4=false;" href="http://www.colettemills.com/">
+                                <div class="hexagon project4">
+                                    <div class="hexTop"></div>
+                                    <div class="hexBottom"></div>
+                                </div>
+                                <div class="overlay">
+                                    <h2 class="projectText text-center" ng-show="project4"><strong>Artist Colette Mills</strong></h2>
+                                    <p class="text-center">Learn more about this project</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hexShift col-lg-4 col-xs-4">
+                            <a ng-mouseenter="project5=true;" class="hovereffect" ng-mouseleave="project5=false;" href="http://gosurfer.bharney.com/">
+                                <div class="hexagon project5">
+                                    <div class="hexTop"></div>
+                                    <div class="hexBottom"></div>
+                                </div>
+                                <div class="overlay">
+                                    <h2 class="projectText text-center" ng-show="project5"><strong>Go-Surfer</strong></h2>
+                                    <p class="text-center">Learn more about this project</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-10 hidden-xs hidden-sm">
+                    <div class="row hexPosition-row3">
+                        <div class="col-lg-4 col-xs-4">
+                            <a ng-mouseenter="project6=true;" class="hovereffect" ng-mouseleave="project6=false;" href="http://pchfarms.azurewebsites.net/">
+                                <div class="hexagon project6">
+                                    <div class="hexTop"></div>
+                                    <div class="hexBottom"></div>
+                                </div>
+                                <div class="overlay">
+                                    <h2 class="projectText text-center" ng-show="project4"><strong>PCH Farms</strong></h2>
+                                    <p class="text-center">Learn more about this project</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hexShift-row3 col-lg-4 col-xs-4">
+                            <a ng-mouseenter="project7=true;" class="hovereffect" ng-mouseleave="project7=false;" href="http://www.harneyhall.com/">
+                                <div class="hexagon project7">
+                                    <div class="hexTop"></div>
+                                    <div class="hexBottom"></div>
+                                </div>
+                                <div class="overlay">
+                                    <h2 class="projectText text-center" ng-show="project5"><strong>Harney Hall Wedding</strong></h2>
+                                    <p class="text-center">Learn more about this project</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 hidden-xs hidden-lg hidden-md">
+                    <a ng-mouseenter="project1=true;" ng-mouseleave="project1=false;" href="https://www.chicagoinabox.com/">
+                        <div class="hovereffect img-rounded">
+                            <img src="~/images/ChicagoInABoxAfter.jpg" alt="Chicago In A Box" class="img-responsive img-rounded form-group" />
+                            <div class="overlay">
+                                <h2 ng-show="project1"><strong>Chicago In A Box</strong></h2>
+                                <p class="text-center">Learn more about this project</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-4 hidden-xs hidden-lg hidden-md">
+                    <a ng-mouseenter="project2=true;" ng-mouseleave="project2=false;" href="http://bharney.com/">
+                        <div class="hovereffect img-rounded">
+                            <img src="~/images/MeetBrianAfter.jpg" alt="Meet Brian" class="img-responsive img-rounded form-group" />
+                            <div class="overlay">
+                                <h2 ng-show="project2"><strong>Meet Brian</strong></h2>
+                                <p class="text-center">Learn more about this project</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-4 hidden-xs hidden-lg hidden-md">
+                    <a ng-mouseenter="project3=true;" ng-mouseleave="project3=false;" href="http://www.JMSAutoRepair.com/">
+                        <div class="hovereffect img-rounded">
+                            <img src="~/images/JMSAfter.jpg" alt="JMS Auto Repair" class="img-responsive img-rounded form-group" />
+                            <div class="overlay">
+                                <h2 ng-show="project3"><strong>JMS Auto</strong></h2>
+                                <p class="text-center">Learn more about this project</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col-xs-offset-2 col-xs-4 hidden-xs hidden-lg hidden-md">
+                        <a ng-mouseenter="project4=true;" ng-mouseleave="project4=false;" href="http://www.colettemills.com/">
+                            <div class="hovereffect img-rounded">
+                                <img src="~/images/ColetteMillsAfter.jpg" alt="Artist Colette Mills" class="img-responsive img-rounded form-group" />
+                                <div class="overlay">
+                                    <h2 ng-show="project4"><strong>Artist Colette Mills</strong></h2>
+                                    <p class="text-center">Learn more about this project</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-4 hidden-xs hidden-lg hidden-md">
+                        <a ng-mouseenter="project5=true;" ng-mouseleave="project5=false;" href="http://gosurfer.bharney.com/">
+                            <div class="hovereffect img-rounded">
+                                <img src="~/images/GoSurferAfter.jpg" alt="Go Surfer" class="img-responsive img-rounded form-group" />
+                                <div class="overlay">
+                                    <h2 ng-show="project5"><strong>Go-Surfer</strong></h2>
+                                    <p class="text-center">Learn more about this project</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-xs-offset-2 col-xs-4 hidden-xs hidden-lg hidden-md">
+                        <a ng-mouseenter="project6=true;" ng-mouseleave="project6=false;" href="http://pchfarms.azurewebistes.net">
+                            <div class="hovereffect img-rounded">
+                                <img src="~/images/PCHFarms.jpg" alt="Go Surfer" class="img-responsive img-rounded form-group" />
+                                <div class="overlay">
+                                    <h2 ng-show="project5"><strong>PCH Farms</strong></h2>
+                                    <p class="text-center">Learn more about this project</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-4 hidden-xs hidden-lg hidden-md">
+                        <a ng-mouseenter="project7=true;" ng-mouseleave="project7=false;" href="http://www.harneyhall.com/">
+                            <div class="hovereffect img-rounded">
+                                <img src="~/images/HarneyHall.jpg" alt="Go Surfer" class="img-responsive img-rounded form-group" />
+                                <div class="overlay">
+                                    <h2 ng-show="project5"><strong>Harney Hall Wedding</strong></h2>
+                                    <p class="text-center">Learn more about this project</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-offset-1 col-xs-10 visible-xs-block">
+                    <a ng-mouseenter="project1=true;" ng-mouseleave="project1=false;" href="https://www.chicagoinabox.com/">
+                        <div class="hovereffect img-rounded">
+                            <img src="~/images/ChicagoInABoxAfter.jpg" alt="Chicago In A Box" class="img-responsive img-rounded form-group" />
+                            <div class="overlay">
+                                <h2 ng-show="project1"><strong>Chicago In A Box</strong></h2>
+                                <p class="text-center">Learn more about this project</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-offset-1 col-xs-10 mobile-xs">
+                    <a ng-mouseenter="project2=true;" ng-mouseleave="project2=false;" href="http://bharney.com/">
+                        <div class="hovereffect img-rounded">
+                            <img src="~/images/MeetBrianAfter.jpg" alt="Meet Brian" class="img-responsive img-rounded form-group" />
+                            <div class="overlay">
+                                <h2 ng-show="project2"><strong>Meet Brian</strong></h2>
+                                <p class="text-center">Learn more about this project</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-offset-1 col-xs-10 visible-xs-block">
+                    <a ng-mouseenter="project3=true;" ng-mouseleave="project3=false;" href="http://www.JMSAutoRepair.com/">
+                        <div class="hovereffect img-rounded">
+                            <img src="~/images/JMSAfter.jpg" alt="JMS Auto Repair" class="img-responsive img-rounded form-group" />
+                            <div class="overlay">
+                                <h2 ng-show="project3"><strong>JMS Auto</strong></h2>
+                                <p class="text-center">Learn more about this project</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-offset-1 col-xs-10 visible-xs-block">
+                    <a ng-mouseenter="project4=true;" ng-mouseleave="project4=false;" href="http://www.colettemills.com/">
+                        <div class="hovereffect img-rounded">
+                            <img src="~/images/ColetteMillsAfter.jpg" alt="Artist Colette Mills" class="img-responsive img-rounded form-group" />
+                            <div class="overlay">
+                                <h2 ng-show="project4"><strong>Artist Colette Mills</strong></h2>
+                                <p class="text-center">Learn more about this project</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-offset-1 col-xs-10 visible-xs-block">
+                    <a ng-mouseenter="project5=true;" ng-mouseleave="project5=false;" href="http://gosurfer.bharney.com/">
+                        <div class="hovereffect img-rounded">
+                            <img src="~/images/GoSurferAfter.jpg" alt="Go Surfer" class="img-responsive img-rounded form-group" />
+                            <div class="overlay">
+                                <h2 ng-show="project5"><strong>Go-Surfer</strong></h2>
+                                <p class="text-center">Learn more about this project</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-offset-1 col-xs-10 visible-xs-block">
+                    <a ng-mouseenter="project6=true;" ng-mouseleave="project6=false;" href="http://pchfarms.azurewebsites.net/">
+                        <div class="hovereffect img-rounded">
+                            <img src="~/images/PCHFarms.jpg" alt="PCH Farms" class="img-responsive img-rounded form-group" />
+                            <div class="overlay">
+                                <h2 ng-show="project5"><strong>PCH Farms</strong></h2>
+                                <p class="text-center">Learn more about this project</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-offset-1 col-xs-10 visible-xs-block">
+                    <a ng-mouseenter="project7=true;" ng-mouseleave="project7=false;" href="http://www.harneyhall.com">
+                        <div class="hovereffect img-rounded">
+                            <img src="~/images/HarneyHall.jpg" alt="PCH Farms" class="img-responsive img-rounded form-group" />
+                            <div class="overlay">
+                                <h2 ng-show="project5"><strong>Harney Hall Wedding</strong></h2>
+                                <p class="text-center">Learn more about this project</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Technologies" class="no-padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <h2 class="margin-top-0 text-primary text-center">Technology Stack</h2>
+                    <hr />
+                    <div class="col-lg-offset-2 col-sm-offset-2 col-xs-offset-1 col-xs-4">
+                        <ul>
+                            <li>ASP.NET MVC</li>
+                            <li>Azure</li>
+                            <li>C#</li>
+                            <li>Containers</li>
+                            <li>Data Warehousing</li>
+                            <li>Entity Framework</li>
+                            <li>Git</li>
+                            <li>HTML5/ CSS3</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-4">
+                        <ul>
+                            <li>Node.js</li>
+                            <li>React</li>
+                            <li>Reddis Cache</li>
+                            <li>Service Bus</li>
+                            <li>SQL</li>
+                            <li>VB</li>
+                            <li>Web Services</li>
+                            <li>Unit/ Integration Testing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="About">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <h2 class="margin-top-0 text-primary text-center">About</h2>
+                    <hr />
+                    <article>
+                        <p class="text-center">
+                            I'm a software engineer, and I'm good at it.
+                        </p>
+                        <a target="_blank" class="text-center" href="~/images/BrianHarney.Resume.2018.pdf"><p>Resume</p></a>
+                        <div>
+                            <ul>
+                                <li>Execution of full software development life cycle of Cloud based Web based ERP, E-Learning, and E-commerce System Implementations.</li>
+                                <li>Project management and Agile development experience to achieve project goals.</li>
+                                <li>Creation of technical, and functional documents like flow charts, design proposals, data mapping, and cost estimates.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-12 col-xs-12 text-center">
+                    <div id="map-outer" class="col-xs-12 col-lg-12">
+                        <div id="googleMap"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <section class="no-padding-top">
+            <fieldset>
+                <div class="row">
+                    <div id="Questions" class="col-lg-12 text-center">
+                        <h2 class="margin-top-0 text-primary text-center"> Contact</h2>
+                        <hr class="primary">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-xs-12 text-center">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        115 Moss Ave,<br />
+                                        Oakland, CA 94611<br />
+                                    </li>
+                                    <li>(630)849-6948</li>
+                                    <li><a href="mailto:bharney0@gmail.com">BHarney0@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3 class="text-center">Have questions for Brian?</h3>
+                        <br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 col-xs-12 text-center">
+                        <form action="/" method="post">
+                            <div class="col-lg-4 col-sm-4 col-xs-12 margin-bottom">
+                                <input required type="text" ng-model="email.Name" name="Name" class="form-control form-group" placeholder="Name">
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-xs-12">
+                                <input type="email" ng-model="email.EmailAddress" name="EmailAddress" class="form-control form-group" placeholder="Email">
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-xs-12">
+                                <input type="text" ng-model="email.Phone" name="Phone" class="form-control form-group" placeholder="Phone">
+                            </div>
+                            <div class="col-lg-12 col-xs-12">
+                                <textarea style="width:100%;" ng-model="email.Message" name="Message" spellcheck="true" class="form-control form-group" rows="8" placeholder="Your message here..."></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-xs-offset-4 col-xs-4">
+                        <button ng-click="$ctrl.sendEmail()" class="btn btn-success btn-lg btn-block center-block" type="button"><span>Send <i class="glyphicon glyphicon-send"></i></span></button>
+                    </div>
+                </div>
+            </fieldset>
+        </section>
+    </div>
+</div>

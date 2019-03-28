@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>f1e6abf0-57c3-4ae5-9895-9e8b2bbad6df</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\site.min.css" />
+    <None Include="wwwroot\js\site.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Sendgrid" Version="9.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Shared\~\css\" />
+    <Folder Include="Views\Shared\~\js\" />
+  </ItemGroup>
+
+</Project>
